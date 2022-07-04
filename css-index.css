@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(rgb(140, 102, 202),rgb(77, 126, 233),rgb(69, 27, 185));
+    font: 'roboto',sans-serif;
+    margin:0 ;
+}
+h1{font-size: 3em;color:black ;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.5em;text-align: center;}
+li{list-style: none;font-size: 1.25em;}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border:2px solid rgb(0, 0,0);
+    box-shadow:(2px,2px,10px,rgb(0, 0,0,0.7));
+    color: white;
+    background-color: rgb(46, 46, 223);
+    
+}
+button:hover{
+    background-color: rgb(135, 135, 238);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{
+    color:rgb(46, 46, 223) ;
+}
+header{
+    background-color: rgb(100, 127, 218);
+}
+header.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgba(46, 46, 223,0.5) ;
+    font-size: 1.25em;
+    text-align: center;
+}
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+header a:hover{
+    color:rgb(46, 46, 223) ;
+}
+#hero{
+    display: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+}
+#soy-stufet .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+#soy-stufet .img-container{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),url('media/cañon.png'));
+    background-position: center,center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.5),5px;
+}
+#mis-habilidades{
+    background-color: rgba(30, 30, 30,0.5);
+    color: white;
+    text-align: center;
+
+}
+#mis-habilidades .container{
+    padding: 50px 12px;
+    
+    
+
+}
+#mis-habilidades h2{
+    margin-top: 0px;
+}
+#mis-habilidades p{
+    display: none;
+    color: white;
+}
+#mis-habilidades .carta{
+   border-radius: 10px;
+
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/DISEÑO.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/frontend.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/backend.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center,center;
+
+
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+    
+
+}
+#caracteristicas li{
+    margin: 15px 0;
+    font-weight: bold;
+
+}
+#final{
+    display: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(30, 30,30,0.5);
+    color: white;
+}
+footer{
+    background-color: rgb(214, 212, 212);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:720px){
+    header {
+        
+        width: 100%;
+        display: flex;
+       
+        
+    }
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+        margin-top: 25px;
+    }
+    #soy-stufet .container{
+        display: flex;
+        justify-content:center;
+    }
+    #soy-stufet .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 30px;
+    }
+    #soy-stufet h2{
+        margin-top: 50px;
+    }
+   
+    #soy-stufet .img-container{
+        background-image: url('media/cañon.png');
+        background-position: center,center;
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px rgba(0, 0,0,0.3);
+
+    }
+    #mis-habilidades .container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    #soy-stufet h3{
+        margin-top: 0;
+    }
+    #mis-habilidades p{
+        display: block;
+        margin-bottom: 30px;
+        
+    }
+    #mis-habilidades .carta{
+        padding: 20px;
+        background-size: 100% 250px;
+        background-position-y:0 ; 
+        background-color: rgba(50,50,50,0.5);
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+        margin: 10px
+    }
+    .carta:first-child{
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/DISEÑO.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center,center;
+    
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/frontend.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center,center;
+    
+    
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('media/backend.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center,center;
+    
+    
+    }
+    #caracteristicas{
+        
+        background-image:  url('media/conocimientos-tecnicos.jpg');
+        background-repeat: no-repeat;
+        background-size: 600px 600px;
+        background-position:  calc(100vw - 700px)  300px;
+        margin: 0;
+       
+
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        
+
+
+    }
+    #caracteristicas li{
+        margin-left: 100px;
+        color: white;
+
+    }
+    #caracteristicas h2{
+        color: white;
+    }
+    #final h2{
+        font-size: 3em;
+    }
+    #final button{
+        font-size: 2em;
+    }
+    footer .container{
+       
+        justify-content:flex-end ;
+    }   
+
+
+
+    
+}
+@media (min-width:1200px){
+   #caracteristicas{ background-position:  calc(100vw - 700px)  300px;box-shadow: 10px 10px 5px rgba(0,0,0,0.2);}
+
+
+}
